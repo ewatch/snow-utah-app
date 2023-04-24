@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+    <sys_transform_map action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>Create Records</name>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>true</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	log.info("generating incidents...");
+//	log.info(source.json_payload);
+	
+	var insertCount = 0;
+	
+	var payload = JSON.parse(source.json_payload);
+	
+	log.info("Payload length: " + payload.length);
+
+	payload.forEach(function(incidentPayload) {
+		
+		var gr = new GlideRecord("incident");
+		gr.newRecord();
+	    gr.active = incidentPayload.active;
+        gr.priority = incidentPayload.priority;
+        gr.severity = incidentPayload.severity;
+        gr.short_description = incidentPayload.short_description;
+        gr.state = incidentPayload.state;
+		gr.caller_id = incidentPayload.caller_id;
+		/*
+		gr.approval = incidentPayload.approval;
+        gr.category = incidentPayload.category;
+        
+        gr.impact = incidentPayload.impact;
+        gr.incident_state = incidentPayload.incident_state;
+        gr.knowledge = incidentPayload.knowledge;
+        gr.made_sla = incidentPayload.made_sla;
+        gr.notify = incidentPayload.notify;
+		*/
+        var result = gr.insert();
+		if(result) {
+			insertCount++;
+		}
+	});
+	
+	log.info("Incidents created: " + insertCount);
+	
+	ignore = true;
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>x_471912_my_test_a_test_data</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 06:58:53</sys_created_on>
+        <sys_id>6b85631b47fd25105641fef0236d43ff</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Create Records</sys_name>
+        <sys_package display_value="my test app" source="x_471912_my_test_a">429eea7d471121105641fef0236d4334</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="my test app">429eea7d471121105641fef0236d4334</sys_scope>
+        <sys_update_name>sys_transform_map_6b85631b47fd25105641fef0236d43ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 12:26:24</sys_updated_on>
+        <target_table>incident</target_table>
+    </sys_transform_map>
+</record_update>

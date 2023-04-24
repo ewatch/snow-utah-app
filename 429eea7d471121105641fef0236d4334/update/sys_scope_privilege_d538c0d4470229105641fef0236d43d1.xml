@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="my test app">429eea7d471121105641fef0236d4334</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-02 17:25:18</sys_created_on>
+        <sys_id>d538c0d4470229105641fef0236d43d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ImportLog.info</sys_name>
+        <sys_package display_value="my test app" source="x_471912_my_test_a">429eea7d471121105641fef0236d4334</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="my test app">429eea7d471121105641fef0236d4334</sys_scope>
+        <sys_update_name>sys_scope_privilege_d538c0d4470229105641fef0236d43d1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-02 17:25:18</sys_updated_on>
+        <target_name>ImportLog.info</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>

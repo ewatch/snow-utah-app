@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="97d7e8eb47f165105641fef0236d4312" sys_domain="global" table="imp_staging_table_1680263229157" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_test</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-31 11:48:10</sys_created_on>
+            <sys_id>13d7e8eb47f165105641fef0236d4317</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="imp_staging_table_1680263229157" sys_domain="global" view="Default view">97d7e8eb47f165105641fef0236d4312</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-31 11:48:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>imp_staging_table_1680263229157</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-31 11:48:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>97d7e8eb47f165105641fef0236d4312</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>imp_staging_table_1680263229157</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="my test app" source="x_471912_my_test_a">429eea7d471121105641fef0236d4334</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="my test app">429eea7d471121105641fef0236d4334</sys_scope>
+            <sys_update_name>sys_ui_section_97d7e8eb47f165105641fef0236d4312</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-31 11:48:10</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="my test app">429eea7d471121105641fef0236d4334</application>
+        <file_path/>
+        <instance_id>66dcccf0db80b8109a4dcac505961959</instance_id>
+        <instance_name>dev114051</instance_name>
+        <name>sys_ui_section_97d7e8eb47f165105641fef0236d4312</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="97d7e8eb47f165105641fef0236d4312" sys_domain="global" table="imp_staging_table_1680263229157" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>u_test</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-31 11:48:10</sys_created_on><sys_id>13d7e8eb47f165105641fef0236d4317</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="imp_staging_table_1680263229157" sys_domain="global" view="Default view">97d7e8eb47f165105641fef0236d4312</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-31 11:48:10</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>imp_staging_table_1680263229157</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-31 11:48:10</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>97d7e8eb47f165105641fef0236d4312</sys_id><sys_mod_count>0</sys_mod_count><sys_name>imp_staging_table_1680263229157</sys_name><sys_overrides/><sys_package display_value="my test app" source="x_471912_my_test_a">429eea7d471121105641fef0236d4334</sys_package><sys_policy/><sys_scope display_value="my test app">429eea7d471121105641fef0236d4334</sys_scope><sys_update_name>sys_ui_section_97d7e8eb47f165105641fef0236d4312</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-31 11:48:10</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1206465938</payload_hash>
+        <record_name>temp user table</record_name>
+        <reverted_from/>
+        <source>5d3d29a8a9a0211076daa554cb57d917</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 11:48:10</sys_created_on>
+        <sys_id>5bd7e8eb47f165105641fef0236d4318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187377f1d900000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-31 11:48:10</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>13d7e8eb75f16510b3aa18e3fa312118</update_guid>
+        <update_guid_history>13d7e8eb75f16510b3aa18e3fa312118:-1206465938,9fd7e8ebc3f165106a9a166fb369ed14:-681838935</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 19:27:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>23a7632fdf1944d489d2cea2f72aa690</sys_id>
+        <sys_metadata>97d7e8eb47f165105641fef0236d4312</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>imp_staging_table_1680263229157</sys_name>
+        <sys_package display_value="my test app" source="x_471912_my_test_a">429eea7d471121105641fef0236d4334</sys_package>
+        <sys_parent display_value="">68a7e8ab47f165105641fef0236d4323</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="my test app">429eea7d471121105641fef0236d4334</sys_scope>
+        <sys_scope_delete display_value="">04cab55e664c4f148074d0081aeb6110</sys_scope_delete>
+        <sys_update_name>sys_ui_section_97d7e8eb47f165105641fef0236d4312</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_97d7e8eb47f165105641fef0236d4312">5bd7e8eb47f165105641fef0236d4318</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 19:27:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

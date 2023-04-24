@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>import</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	
+	
+	
+	
+	var dataSourceSysId = "b855afd747fd25105641fef0236d4317";
+
+	var dataSource = new GlideRecord("sys_data_source");  
+	dataSource.get(dataSourceSysId);  
+
+	var loader = new global.Loader();
+	var importSetRecSysId = loader.createLoader(dataSource);
+	// Process data source file  
+	/*
+	var loader = new GlideImportSetLoader();  
+	var importSetRec = loader.getImportSetGr(dataSource);  
+	*/
+
+
+	new x_471912_my_test_a.ImportSetRow().createRow(request.body.dataString, importSetRecSysId);
+
+	loader.runTransform();
+	
+	
+	/*
+	var test = request.body.dataString;
+	gs.info("Test" + test);
+	gs.info("Test" + test);
+	gs.info("Test" + test);
+
+	var dataSourceSysId = "b855afd747fd25105641fef0236d4317";
+	
+	var importSetStagingTable = new GlideRecord("x_471912_my_test_a_test_data");
+	importSetStagingTable.newRecord();
+	importSetStagingTable.json_payload = test;
+	importSetStagingTable.insert();
+		
+	var importSet = new GlideRecord('sys_import_set');
+	importSet.short_description = 'Import set from scripted rest api';
+	importSet.table_name = "x_471912_my_test_a_test_data";
+	importSet.data_source = dataSourceSysId;
+	var importSetID = importSet.insert();
+	
+	var importSetStagingTable = new GlideRecord("x_471912_my_test_a_test_data");
+	importSetStagingTable.newRecord();
+	importSetStagingTable.sys_import_set = importSetID;
+	importSetStagingTable.json_payload = test;
+	importSetStagingTable.insert();
+	
+	var importSetRun = new GlideImportSetRun(importSetID);
+	
+
+*/
+
+	
+	
+
+	/*
+	var transformMap = new sn_impex.GlideImportSetTransformMap("temp user map name", importSetTableName, targetTableName);
+	transformMap.addTransformEntry("u_first_name", "first_name");
+	var transformMapId = transformMap.create();
+	*/
+	
+	
+
+	
+	
+	
+	
+	
+	
+	/*
+	
+	var importSetTableName = "x_471912_my_test_a_test_data";
+	var importSet = new GlideRecord('sys_import_set');
+	importSet.short_description = 'Import set from scripted rest api';
+	importSet.table_name = "x_471912_my_test_a_test_data";
+	importSet.data_source = "b855afd747fd25105641fef0236d4317";
+	var importSetID = importSet.insert();
+	var importSetRun = new GlideImportSetRun(importSetID);
+	var transformer = new GlideImportSetTransformer();
+	transformer.setImportSetRun(importSetRun);
+	transformer.transformAllMaps(importSet);
+	
+	*/
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_471912_my_test_a/my_test_import_api/import</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/import</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 06:47:43</sys_created_on>
+        <sys_id>2203e35747fd25105641fef0236d43aa</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>import</sys_name>
+        <sys_package display_value="my test app" source="x_471912_my_test_a">429eea7d471121105641fef0236d4334</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="my test app">429eea7d471121105641fef0236d4334</sys_scope>
+        <sys_update_name>sys_ws_operation_2203e35747fd25105641fef0236d43aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 13:36:17</sys_updated_on>
+        <web_service_definition display_value="my test import api">0642e75f47bd25105641fef0236d43ad</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

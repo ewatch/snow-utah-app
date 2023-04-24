@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <actions_access>true</actions_access>
+        <alter_access>true</alter_access>
+        <caller_access/>
+        <client_scripts_access>true</client_scripts_access>
+        <configuration_access>true</configuration_access>
+        <create_access>true</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>true</delete_access>
+        <is_extendable>false</is_extendable>
+        <label>Incident JSON</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_471912_my_test_a_test_data</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class display_value="Import Set Row" name="sys_import_set_row">37a7a1e0a920211076daa554cb57d9a4</super_class>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 06:51:46</sys_created_on>
+        <sys_id>ce83af5747fd25105641fef0236d4377</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Incident JSON</sys_name>
+        <sys_package display_value="my test app" source="x_471912_my_test_a">429eea7d471121105641fef0236d4334</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="my test app">429eea7d471121105641fef0236d4334</sys_scope>
+        <sys_update_name>sys_db_object_ce83af5747fd25105641fef0236d4377</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 07:57:38</sys_updated_on>
+        <update_access>true</update_access>
+        <user_role display_value="x_471912_my_test_a.test_data_user" name="x_471912_my_test_a.test_data_user">39042f5747fd25105641fef0236d4329</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+</record_update>

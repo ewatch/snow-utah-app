@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ce83af5747fd25105641fef0236d4377" extends="sys_import_set_row" label="Incident JSON" max_length="40" name="x_471912_my_test_a_test_data" type="collection">
+        <element label="JSON Payload" max_length="100000" name="json_payload" type="string"/>
+        <element label="Short Description" max_length="200" name="short_description" type="string"/>
+    </element>
+</database>

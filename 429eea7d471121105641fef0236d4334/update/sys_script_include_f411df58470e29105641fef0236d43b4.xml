@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_471912_my_test_a.ImportSetRow</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ImportSetRow</name>
+        <script><![CDATA[var ImportSetRow = Class.create();
+ImportSetRow.prototype = {
+
+	createRow: function(payload, importSetSysId) {
+		var importSetStagingTable = new GlideRecord("x_471912_my_test_a_test_data");
+		importSetStagingTable.newRecord();
+		importSetStagingTable.sys_import_set = importSetSysId;
+		importSetStagingTable.json_payload = payload;
+		importSetStagingTable.insert();		
+	},
+	
+    type: 'ImportSetRow'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 08:03:06</sys_created_on>
+        <sys_id>f411df58470e29105641fef0236d43b4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ImportSetRow</sys_name>
+        <sys_package display_value="my test app" source="x_471912_my_test_a">429eea7d471121105641fef0236d4334</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="my test app">429eea7d471121105641fef0236d4334</sys_scope>
+        <sys_update_name>sys_script_include_f411df58470e29105641fef0236d43b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 08:03:57</sys_updated_on>
+    </sys_script_include>
+</record_update>
